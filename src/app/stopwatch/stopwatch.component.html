@@ -1,0 +1,15 @@
+<div class="container">
+
+<h1 style="padding-left: 7rem;">Stop Watch</h1>
+<div class="heading">
+<button (click)="start()" class="button">Start</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<button (click)="stop()" class="button">Stop</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<button (click)="reset()" class="button">Reset</button>
+</div>
+<br>
+<br>
+<div class="watch" [style.backgroundImage]="'url(' + getCurrentImageUrl() + ')'">
+  {{hour}} : {{minute}} : {{second}}
+</div>
+
+</div>
