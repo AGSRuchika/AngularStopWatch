@@ -6,9 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./stopwatch.component.scss'],
 })
 export class StopwatchComponent {
-  minute = 59;
-  hour = 1;
-  second = 50;
+  minute = 0;
+  hour = 0;
+  second = 0;
   running = 'false';
   timer: any;
 
