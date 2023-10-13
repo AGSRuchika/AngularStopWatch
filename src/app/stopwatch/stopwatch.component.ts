@@ -34,13 +34,17 @@ export class StopwatchComponent {
         }
       }
       this.currentImageIndex = (this.currentImageIndex + 1) % this.backgroundImageUrls.length;
+      const watch = document.querySelector('.watch') as HTMLElement;
+      watch.style.backgroundImage = `url(${this.backgroundImageUrls[this.currentImageIndex]})`;
 
-      this.timer=setTimeout(() => this.startimer(), 1000);
+      this.timer = setTimeout(() => this.startimer(), 1000);
     }
   }
 
   start() {
     this.running = 'true';
+    const preloadImage = new Image();
+    preloadImage.src = this.backgroundImageUrls[this.currentImageIndex];
     this.startimer();
     console.log(this.timer);
   }
