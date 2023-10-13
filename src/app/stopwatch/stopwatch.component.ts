@@ -41,6 +41,19 @@ export class StopwatchComponent {
     }
   }
 
+  isStopWatchTabVisible:any;
+  isTimerTabVisible:any;
+  
+  showStopWatch(){
+    this.isStopWatchTabVisible='true';
+  }
+
+  showTimer(){
+    this.isTimerTabVisible='true';
+  }
+
+
+
   start() {
     this.running = 'true';
     const preloadImage = new Image();

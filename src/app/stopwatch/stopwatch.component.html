@@ -1,15 +1,15 @@
 <div class="container">
 
-<h1>Stop Watch</h1>
-<div class="heading">
-<button (click)="start()" class="button">Start</button>&nbsp;&nbsp;
-<button (click)="stop()" class="button">Stop</button>&nbsp;&nbsp;
-<button (click)="reset()" class="button">Reset</button>&nbsp;
-</div>
-<br>
-<br>
-<div class="watch" [style.backgroundImage]="'url(' + getCurrentImageUrl() + ')'">
-  {{hour}} : {{minute}} : {{second}}
-</div>
+  <h1>Stop Watch</h1>
+  <div class="heading">
+  <button (click)="start()" class="button" matTooltip="Play"><mat-icon>play_arrow</mat-icon></button>&nbsp;&nbsp;
+  <button (click)="stop()" class="button" matTooltip="Pause/Stop"><mat-icon>stop</mat-icon></button>&nbsp;&nbsp;
+  <button (click)="reset()" class="button" matTooltip="Reset"><mat-icon>restore</mat-icon></button>&nbsp;
+  </div>
+  <br>
+  <br>
+  <div class="watch" [style.backgroundImage]="'url(' + getCurrentImageUrl() + ')'">
+    {{hour}} : {{minute}} : {{second}}
+  </div>
 
-</div>
+  </div>

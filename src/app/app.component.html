@@ -1,1 +1,11 @@
-<router-outlet></router-outlet>
+<!-- <router-outlet></router-outlet> -->
+
+<div class="container">
+  <div class="btn-group move">
+    <button class="btn btn-primary" (click)="showStopwatch()" matTooltip="Start Watch"><mat-icon>watch</mat-icon></button> &nbsp;
+    <button class="btn btn-primary" (click)="showTimer()" matTooltip="Timer"><mat-icon>timer</mat-icon></button>
+  </div>
+
+  <app-stopwatch *ngIf="isStopWatchTabVisible"></app-stopwatch>
+  <app-timer *ngIf="isTimerTabVisible"></app-timer>
+</div>

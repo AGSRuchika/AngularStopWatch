@@ -1,0 +1,17 @@
+<div class="container">
+  <h1>Timer</h1>
+  <div class="heading">
+    <div class="input-group">
+      <button (click)="start()" class="button"><mat-icon>play_arrow</mat-icon></button>&nbsp;&nbsp;
+      <button (click)="stop()" class="button"><mat-icon>stop</mat-icon></button>&nbsp;&nbsp;
+      <button (click)="reset()" class="button"><mat-icon>restore</mat-icon></button>&nbsp;
+    </div>
+  </div>
+  <br>
+  <br>
+  <div class="watch" [style.backgroundImage]="'url(' + getCurrentImageUrl() + ')'">
+    <input type="number" [(ngModel)]="hour" class="editable-input">:
+    <input type="number" [(ngModel)]="minute" class="editable-input">:
+    <input type="number" [(ngModel)]="second" class="editable-input">
+  </div>
+</div>
