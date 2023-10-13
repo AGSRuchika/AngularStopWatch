@@ -3,7 +3,6 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
-
 }
 
 .container {
@@ -17,19 +16,16 @@ body {
 
 h1 {
   font-size: 40px;
-  // color: #ffff;
   font-weight: 500;
 }
 
 .button {
   transform: scale(2);
-  // margin: 0 20px;
   background: transparent;
-  // border-radius: 50px;
   border: none;
 }
 
-.heading{
+.heading {
   margin-bottom: -30px;
   margin-top: -20px;
   color: #ffff;

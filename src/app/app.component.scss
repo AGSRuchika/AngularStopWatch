@@ -1,5 +1,6 @@
-.container{
-  padding-left:20px;
+// app.component.scss
+.container {
+  padding-left: 20px;
   padding-top: 20px;
 }
 
@@ -7,12 +8,5 @@ button {
   transform: scale(1.5);
   margin: 0 30px;
   border-radius: 50px;
-  // border: none;
   background: none;
 }
-
-.move{
-  // margin-left: 500px;
-  // margin-top: 15px;
-}
-
